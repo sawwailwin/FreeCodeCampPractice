@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saw Wai Lwin Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b83b28bfbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Training Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="welcome-section">
+                <h1>Hi, I'm <span>Saw Wai Lwin</span><br> Java Web Developer </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Helllo.........<br>
+                        I am Saw Wai Lwin, Java web developer. I have studied at University of Computer Studeis, Mandalay(UCSM). I am an enthusiastic, self-motivated, reliable, responsible and 
+                        hard-working person. I am a good timekeeper and always willing 
+                        to learn new skills. My greatest passion in life is using my 
+                        technical knowledge how to benefit other people and 
+                        organizations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------training projects-------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Training Projects</h1>
+                <div class="project-tile">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-school-flag"></i>
+                        <h2 >Learning Management System(LMS)</h2>
+                        <p>This system is my OJT group project. <br>
+                            The sysetm is role base and has three roles, admin, teachers and students. <br>
+                            Used technologies- <br>
+                            -HTML, CSS, BootStrap, JavaScript, JQuery, Vue, Sweet Alert, Axios, ChartJS <br>
+                            -SpringBoot, SpringDataJpa, Spring Security, MySQL <br>
+                            -EmojiOneArea
+                        </p>
+                        <a href="https://github.com/sawwailwin/AILP-V">Source Code</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-people-line"></i>
+                        <h2>Student Management System</h2>
+                        <p>This is my training Spring Data Jpa project.<br>
+                            Admin can search and insert, update, delete student.
+                        </p>
+                        <a href="https://github.com/sawwailwin/studentManagementSpringDataJpa">Source Code</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-building"></i>
+                        <h2>Apartment Management System</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur excepturi
+                             sed doloribus, quibusdam corrupti magnam architecto blanditiis aliquam ducimus unde iusto
+                              aperiam expedita quidem non sint culpa illo animi.
+                        </p>
+                        <a href="#">Source Code</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- ------------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> sawwailwin.2022@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09-953853121</p>
+                    <div class="social-icons">
+                        <a href="#" id="profile-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" id="profile-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" id="profile-link" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ sawwailwin<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>      
+</body>
+</html>

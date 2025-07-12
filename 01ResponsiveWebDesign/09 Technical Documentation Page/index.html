@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">          <title>technical-documentation-page</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Git Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#git_init">git init</a></li>
+          <li><a class="nav-link" href="#git_add">git add</a></li>
+          <li><a class="nav-link" href="#git_commit">git commit</a></li>
+          <li><a class="nav-link" href="#git_push_and_git_pull">git push and git pull</a></li>
+        </ul>
+      </nav>
+
+      <section class="main-section" id="introduction">
+        <header>introduction</header>
+         <p>Git is a distributed version control system that helps developers track changes in their codebase, collaborate with others, and manage project history efficiently. It's an essential tool in modern software development workflows.</p>
+  
+  <p>By learning Git commands, developers can confidently manage source code, switch between versions, and collaborate on projects without overwriting each other's work. Understanding the basics is key to mastering more advanced operations later.</p>
+  
+  <p>Unlike traditional version control systems that rely on a central server, Git allows every developer to have a full copy of the repository on their own machine. This makes it faster, more reliable, and better suited for offline work and branching strategies.</p>
+  
+  <p>Whether you're working on a personal project or contributing to a large open-source codebase, Git provides the tools needed to track changes, experiment safely, and merge contributions from multiple developers in an organized and traceable way.</p>
+
+  <ul>
+    <li>Git is the foundation of popular platforms like GitHub, GitLab, and Bitbucket.</li>
+  </ul>
+      </section>
+      <section class="main-section" id="git_init">
+        <header>git init</header>
+        <p>The <code>git init</code> command initializes a new Git repository in your project directory. It creates a hidden <code>.git</code> folder that stores all version history and configuration for that repository.</p>
+  
+  <p>This command is typically the first step when starting a new project with Git. Once initialized, you can begin adding files, committing changes, and pushing to remote repositories like GitHub or GitLab.</p>
+  
+  <p>After running <code>git init</code>, your project directory is now under Git's control. However, it doesn't track any files automatically—you must explicitly stage them using <code>git add</code>. This ensures you're always in control of what gets committed to history.</p>
+  
+  <p>You can also use <code>git init</code> inside an existing project folder to start versioning an already-developed application. Just be cautious: running <code>git init</code> again in a directory that already contains a <code>.git</code> folder can reset your Git settings or corrupt the history if done incorrectly.</p>
+
+  <ul>
+    <li>Use <code>git init</code> to convert a local folder into a Git repository.</li>
+  </ul>
+      </section>
+      <section class="main-section" id="git_add">
+        <header>git add</header>
+        <p>The <code>git add</code> command stages changes to be committed. It tells Git which files or changes should be included in the next commit. This gives developers precise control over what gets saved to project history.</p>
+  
+  <p>For example, if you’ve modified multiple files but only want to commit one, you can run <code>git add filename</code> to stage just that file. You can also stage all changes at once using <code>git add .</code> or <code>git add -A</code>.</p>
+  
+  <p>It's important to understand that <code>git add</code> does not commit your changes—it only prepares them. This two-step process (stage → commit) helps you verify and organize your changes before saving them permanently in your repository.</p>
+  
+  <p>Additionally, you can stage parts of a file using <code>git add -p</code>, which allows you to review and choose individual code hunks interactively. This is useful when you're working on multiple changes in a file but want to separate them into different commits for clarity and maintainability.</p>
+
+  <ul>
+    <li>Use <code>git add</code> to prepare changes for a clean and intentional commit history.</li>
+  </ul>
+      </section>
+      <section class="main-section" id="git_commit">
+        <header>git commit</header>
+       <p>The <code>git commit</code> command is used to save your staged changes into the repository’s history. It creates a permanent snapshot of the code at that point in time, which can be reviewed, compared, or reverted later.</p>
+  
+  <p>Each commit is identified by a unique SHA-1 hash and typically includes a message describing what was changed. You can create a commit by using the syntax <code>git commit -m "Your message here"</code>, which combines the commit action with a descriptive message.</p>
+  
+  <p>Well-written commit messages are essential for collaborative work. A clear message helps team members understand what was changed and why, without needing to dig into the code. A good convention is to write messages in the present tense, such as "Fix login bug" or "Add user authentication."</p>
+  
+  <p>Commits only include files that have been staged with <code>git add</code>. If you modify a file but forget to add it, it won't be part of the commit. To streamline the process, you can use <code>git commit -am "message"</code> to automatically stage and commit tracked files—but note that this won’t include new, untracked files.</p>
+
+  <ul>
+    <li>Use <code>git commit -m "message"</code> to save staged changes with a clear description.</li>
+  </ul>
+      </section>
+      <section class="main-section" id="git_push_and_git_pull">
+        <header>git push and git pull</header> 
+        <p>The <code>git push</code> command is used to upload your local commits to a remote repository, such as GitHub, GitLab, or Bitbucket. This allows your changes to be shared with others and backed up remotely. Pushing is typically done after committing your changes locally.</p>
+  
+  <p>To push your changes, use <code>git push origin branch-name</code>, where <code>origin</code> is the default name for your remote repository and <code>branch-name</code> refers to the branch you want to update. If you're working on the <code>main</code> branch, the command would be <code>git push origin main</code>.</p>
+  
+  <p>On the other hand, <code>git pull</code> is used to fetch changes from a remote repository and merge them into your current local branch. It combines two actions: <code>git fetch</code> (which downloads new data) and <code>git merge</code> (which integrates that data into your working directory).</p>
+  
+  <p>Using <code>git pull</code> regularly ensures that your local project stays up to date with changes made by others, reducing the likelihood of merge conflicts. It’s a good habit to pull before you start working, especially when collaborating with a team, so you’re always working on the latest version of the codebase.</p>
+
+  <ul>
+    <li>Use <code>git pull</code> to sync your code, and <code>git push</code> to share your work.</li>
+  </ul>
+      </section>
+    </main>
+  </body>
+</html>
